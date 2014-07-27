@@ -1,0 +1,88 @@
+%!TEX TS-program = xelatex
+
+% BUSINESS CARD template
+% created by Karol Kozioł (www.karol-koziol.net)
+% for ShareLaTeX - online LaTeX editor (www.sharelatex.com)
+% May 2013
+
+% Edited 27.07.2014
+% by Amet Umerov
+% http://blog.amet13.name
+
+\documentclass[10pt]{article}
+\usepackage[dvips]{graphicx}
+
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pst-barcode}
+
+\usepackage[english,russian]{babel}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+\setsansfont{Arial}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},hmargin=10mm,vmargin=2mm}
+
+\pagestyle{empty}
+
+\renewcommand\familydefault{\sfdefault}
+
+%%% BUSINESS CARD SIZE
+\newlength{\cardw}
+\newlength{\cardh}
+%% ISO 7810 size: 85.60mm × 53.98mm
+\setlength{\cardw}{85.60mm}
+\setlength{\cardh}{53.98mm}
+
+%% European size: 85mm × 55mm
+% \setlength{\cardw}{85mm}
+% \setlength{\cardh}{55mm}
+
+%% US size: 3.5 in × 2 in
+% \setlength{\cardw}{3.5in}
+% \setlength{\cardh}{2in}
+
+
+%%% DEFINE USER DATA
+\newcommand{\Name}{
+{\huge \textbf{Amet Umerov}}
+}%
+\newcommand{\Description}{
+{\large Linux System Administrator}
+}%
+\newcommand{\Email}{
+admin@amet13.name
+}%
+\newcommand{\Phone}{
++380 66 45 25 321
+}%
+\newcommand{\Site}{
+blog.amet13.name
+}%
+
+\begin{document}
+
+\definecolor{mycolor}{rgb}{0.427,0.592,0.749} % RGB(109,151,191)
+
+\begin{tikzpicture}
+% grid
+\foreach \i in {0,1,2,3,4,5} \draw[very thin, gray,dashed] (0,\i*\cardh) -- (2*\cardw,\i*\cardh);
+\foreach \j in {0,1,2} \draw[very thin, gray,dashed] (\j*\cardw,0) -- (\j*\cardw,5*\cardh);
+% card content
+\foreach \i in {0,1} \foreach \j in {0,1,2,3,4} {
+   \node at (\i*\cardw+0.2\cardw,\j*\cardh+0.5\cardh) {
+   \begin{pspicture}(22mm,45mm)
+   		\psbarcode{MECARD:N:Umerov,Amet;EMAIL:admin@amet13.name;URL:http://blog.amet13.name;;}{eclevel=L width=0.9 height=0.9}{qrcode}
+   \end{pspicture}
+   };
+   
+   \node[black!25!mycolor][right] at (\i*\cardw+0.05\cardw,\j*\cardh+0.75\cardh) {\Name};
+   \node [right] at (\i*\cardw+0.05\cardw,\j*\cardh+0.6\cardh) {\Description};
+   \node [left] at (\i*\cardw+0.9\cardw,\j*\cardh+0.4\cardh) {\Phone};
+   \node [left] at (\i*\cardw+0.9\cardw,\j*\cardh+0.3\cardh) {\Site};
+   \node [left] at (\i*\cardw+0.9\cardw,\j*\cardh+0.2\cardh) {\Email};
+i};
+\end{tikzpicture}
+
+\end{document}
