@@ -5,8 +5,7 @@
 % for ShareLaTeX - online LaTeX editor (www.sharelatex.com)
 % May 2013
 
-% Edited 27.07.2014
-% by Amet Umerov
+% Edited by Amet Umerov
 % http://blog.amet13.name
 
 \documentclass[10pt]{article}
@@ -20,6 +19,12 @@
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
 \setsansfont{Arial}
+
+\usepackage{hyperref}
+\hypersetup{
+    pdfauthor={Amet Umerov},
+    pdftitle={Business Card},
+}
 
 \usepackage{geometry}
 \geometry{total={210mm,297mm},hmargin=10mm,vmargin=2mm}
@@ -46,19 +51,19 @@
 
 %%% DEFINE USER DATA
 \newcommand{\Name}{
-{\huge \textbf{Amet Umerov}}
+	{\huge \textbf{Amet Umerov} }
 }%
 \newcommand{\Description}{
-{\large Linux System Administrator}
+	{\large Linux System Administrator }
 }%
 \newcommand{\Email}{
-admin@amet13.name
+	{\large admin@amet13.name }
 }%
 \newcommand{\Phone}{
-+380 66 45 25 321
+	{\large +380 66 45 25 321 }
 }%
 \newcommand{\Site}{
-blog.amet13.name
+	{\large blog.amet13.name }
 }%
 
 \begin{document}
@@ -79,9 +84,9 @@ blog.amet13.name
    
    \node[black!25!mycolor][right] at (\i*\cardw+0.05\cardw,\j*\cardh+0.75\cardh) {\Name};
    \node [right] at (\i*\cardw+0.05\cardw,\j*\cardh+0.6\cardh) {\Description};
-   \node [left] at (\i*\cardw+0.9\cardw,\j*\cardh+0.4\cardh) {\Phone};
-   \node [left] at (\i*\cardw+0.9\cardw,\j*\cardh+0.3\cardh) {\Site};
-   \node [left] at (\i*\cardw+0.9\cardw,\j*\cardh+0.2\cardh) {\Email};
+   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.38\cardh) {\Phone};
+   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.28\cardh) {\Site};
+   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.18\cardh) {\Email};
 i};
 \end{tikzpicture}
 
