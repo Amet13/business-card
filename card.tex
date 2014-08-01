@@ -17,6 +17,7 @@
 
 \usepackage[english,russian]{babel}
 \usepackage{fontspec}
+
 \defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
 \setsansfont{Arial}
 
@@ -36,9 +37,13 @@
 %%% BUSINESS CARD SIZE
 \newlength{\cardw}
 \newlength{\cardh}
+%% My size
+\setlength{\cardw}{90mm}
+\setlength{\cardh}{50mm}
+
 %% ISO 7810 size: 85.60mm × 53.98mm
-\setlength{\cardw}{85.60mm}
-\setlength{\cardh}{53.98mm}
+% \setlength{\cardw}{85.60mm}
+% \setlength{\cardh}{53.98mm}
 
 %% European size: 85mm × 55mm
 % \setlength{\cardw}{85mm}
@@ -77,16 +82,16 @@
 % card content
 \foreach \i in {0,1} \foreach \j in {0,1,2,3,4} {
    \node at (\i*\cardw+0.2\cardw,\j*\cardh+0.5\cardh) {
-   \begin{pspicture}(22mm,45mm)
-   		\psbarcode{MECARD:N:Umerov,Amet;EMAIL:admin@amet13.name;URL:http://blog.amet13.name;;}{eclevel=L width=0.9 height=0.9}{qrcode}
-   \end{pspicture}
+   		\begin{pspicture} (22mm,40mm)
+   			\psbarcode{MECARD:N:Umerov,Amet;EMAIL:admin@amet13.name;URL:http://blog.amet13.name;;}{eclevel=L width=1 height=1}{qrcode}
+   		\end{pspicture}
    };
    
-   \node[black!25!mycolor][right] at (\i*\cardw+0.05\cardw,\j*\cardh+0.75\cardh) {\Name};
-   \node [right] at (\i*\cardw+0.05\cardw,\j*\cardh+0.6\cardh) {\Description};
-   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.38\cardh) {\Phone};
-   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.28\cardh) {\Site};
-   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.18\cardh) {\Email};
+   \node[black!25!mycolor][right] at (\i*\cardw+0.05\cardw,\j*\cardh+0.85\cardh) {\Name};
+   \node [right] at (\i*\cardw+0.05\cardw,\j*\cardh+0.7\cardh) {\Description};
+   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.35\cardh) {\Phone};
+   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.25\cardh) {\Site};
+   \node [left] at (\i*\cardw+0.95\cardw,\j*\cardh+0.15\cardh) {\Email};
 i};
 \end{tikzpicture}
 
