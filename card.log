@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2014.6.10)  19 AUG 2014 03:58
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2014.6.10)  21 AUG 2014 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,14 +1085,14 @@ LaTeX Info: Redefining \nameref on input line 74.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(5.69054pt, 783.58891pt, 5.69054pt)
+* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=557.38951pt
-* \textheight=783.58891pt
+* \textheight=738.0645pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-103.57945pt
+* \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1142,7 +1142,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
 Here is how much of TeX's memory you used:
  30634 strings out of 494949
  572430 string characters out of 6180264
- 652551 words of memory out of 5000000
+ 652740 words of memory out of 5000000
  33425 multiletter control sequences out of 15000+600000
  4112 words of font info for 29 fonts, out of 8000000 for 9000
  662 hyphenation exceptions out of 8191

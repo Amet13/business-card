@@ -28,7 +28,7 @@
 }
 
 \usepackage{geometry}
-\geometry{total={210mm,297mm},hmargin=10mm,vmargin=2mm}
+\geometry{total={210mm,297mm},hmargin=10mm,vmargin=10mm}
 
 \pagestyle{empty}
 
@@ -82,8 +82,8 @@
 % card content
 \foreach \i in {0,1} \foreach \j in {0,1,2,3,4} {
    \node at (\i*\cardw+0.2\cardw,\j*\cardh+0.5\cardh) {
-   		\begin{pspicture} (22mm,40mm)
-   			\psbarcode{MECARD:N:Umerov,Amet;EMAIL:admin@amet13.name;URL:http://blog.amet13.name;;}{eclevel=L width=1 height=1}{qrcode}
+   		\begin{pspicture} (20mm,40mm)
+   			\psbarcode{MECARD:N:Umerov,Amet;EMAIL:admin@amet13.name;URL:http://blog.amet13.name;TEL:+79780075606;}{eclevel=L width=1 height=1}{qrcode}
    		\end{pspicture}
    };
    
