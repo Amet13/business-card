@@ -1,7 +1,16 @@
 business-card
-========
+============
 My business card created by LaTeX
 
-Author: http://www.karol-koziol.net/tex/
 
-Required packages: http://blog.amet13.name/2014/06/latex.html
+Required packages
+-----------------
+Required packages for LaTeX on my [blog].
+
+
+Original author
+---------------
+[Karol Kozioł]
+
+[blog]:http://blog.amet13.name/2014/06/latex.html
+[Karol Kozioł]:http://www.karol-koziol.net/tex/
