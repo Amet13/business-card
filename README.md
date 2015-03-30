@@ -1,12 +1,14 @@
 business-card
-============
-My business card created by LaTeX
+=============
+My business card created by LaTeX nad pst-barcode
 
+Screenshot
+----------
+![](https://raw.githubusercontent.com/Amet13/business-card/master/screenshot.png)
 
 Required packages
 -----------------
 Required packages for LaTeX on my [blog].
-
 
 Original author
 ---------------
