@@ -1,6 +1,6 @@
 business-card
 =============
-My business card created by LaTeX nad pst-barcode
+My business card created by LaTeX and pst-barcode
 
 Screenshot
 ----------
