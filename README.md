@@ -2,7 +2,7 @@ business-card
 =============
 My business card created by LaTeX and pst-barcode
 
-[![PDF Status](https://www.sharelatex.com/github/repos/Amet13/business-card/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/Amet13/business-card/)
+![PDF Status](https://www.sharelatex.com/github/repos/Amet13/business-card/builds/latest/badge.svg)
 
 Screenshot
 ----------
