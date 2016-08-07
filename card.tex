@@ -26,7 +26,7 @@
 
 \usepackage{hyperref}
 \hypersetup{
-    pdfauthor={Amet Umerov},
+    pdfauthor={John Doe},
     pdftitle={Business Card},
 }
 
@@ -59,19 +59,19 @@
 
 %%% DEFINE USER DATA
 \newcommand{\Name}{
-	{\huge \textbf{Amet Umerov} }
+	{\huge \textbf{John Doe} }
 }%
 \newcommand{\Description}{
 	{\large Linux System Administrator }
 }%
 \newcommand{\Email}{
-	{\large admin@amet13.name }
+	{\large john@example.com }
 }%
 \newcommand{\Phone}{
-	{\large +7 978 00 75 606 }
+	{\large +1 234 56 78 910 }
 }%
 \newcommand{\Site}{
-	{\large amet13.name }
+	{\large johndoe.com }
 }%
 
 \begin{document}
@@ -86,7 +86,7 @@
 \foreach \i in {0,1} \foreach \j in {0,1,2,3,4} {
    \node at (\i*\cardw+0.2\cardw,\j*\cardh+0.5\cardh) {
    		\begin{pspicture} (20mm,40mm)
-   			\psbarcode{MECARD:N:Umerov,Amet;EMAIL:admin@amet13.name;URL:http://amet13.name;TEL:+79780075606;}{eclevel=L width=1 height=1}{qrcode}
+   			\psbarcode{MECARD:N:Doe,John;EMAIL:john@example.com;URL:https://johndoe.com;TEL:+12345678910;}{eclevel=L width=1 height=1}{qrcode}
    		\end{pspicture}
    };
    
